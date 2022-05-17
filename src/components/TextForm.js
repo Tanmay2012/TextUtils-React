@@ -62,11 +62,11 @@ export default function TextForm(props) {
       <div className="mb-3" >
       <textarea className="form-control"  style={{backgroundColor : props.mode==='dark'?'#171717':'white',color:props.mode==='dark'?'white':'black'}}id="myBox" value={text} onChange={handleOnChange} rows="7"></textarea>
       </div>
-      <button className="btn btn-primary" onClick={handleUpClick} style={{backgroundColor : props.mode==='dark'?'#444444':'#0d6efd',border :props.mode==='dark'?'#444444':'#0d6efd'}}>Convert to Uppercase</button>
-      <button className="btn btn-primary mx-2" onClick={handleLoClick} style={{backgroundColor : props.mode==='dark'?'#444444':'#0d6efd',border :props.mode==='dark'?'#444444':'#0d6efd'}}>Convert to Lowercase</button>
-      <button className="btn btn-primary" onClick={handleClearClick} style={{backgroundColor : props.mode==='dark'?'#444444':'#0d6efd',border :props.mode==='dark'?'#444444':'#0d6efd'}}>Clear Text</button>
-      <button className="btn btn-primary mx-2" onClick={handleCopy} style={{backgroundColor : props.mode==='dark'?'#444444':'#0d6efd',border :props.mode==='dark'?'#444444':'#0d6efd'}}>Copy Text</button>
-      <button className="btn btn-primary" onClick={handleExtraSpaces} style={{backgroundColor : props.mode==='dark'?'#444444':'#0d6efd',border :props.mode==='dark'?'#444444':'#0d6efd'}}>Remove Extra Spaces</button>
+      <button className="btn btn-primary my-2" onClick={handleUpClick} style={{backgroundColor : props.mode==='dark'?'#444444':'#0d6efd',border :props.mode==='dark'?'#444444':'#0d6efd'}}>Convert to Uppercase</button>
+      <button className="btn btn-primary mx-2 my-2" onClick={handleLoClick} style={{backgroundColor : props.mode==='dark'?'#444444':'#0d6efd',border :props.mode==='dark'?'#444444':'#0d6efd'}}>Convert to Lowercase</button>
+      <button className="btn btn-primary my-2" onClick={handleClearClick} style={{backgroundColor : props.mode==='dark'?'#444444':'#0d6efd',border :props.mode==='dark'?'#444444':'#0d6efd'}}>Clear Text</button>
+      <button className="btn btn-primary mx-2 my-2" onClick={handleCopy} style={{backgroundColor : props.mode==='dark'?'#444444':'#0d6efd',border :props.mode==='dark'?'#444444':'#0d6efd'}}>Copy Text</button>
+      <button className="btn btn-primary my-2" onClick={handleExtraSpaces} style={{backgroundColor : props.mode==='dark'?'#444444':'#0d6efd',border :props.mode==='dark'?'#444444':'#0d6efd'}}>Remove Extra Spaces</button>
   </div>
   <div className="container my-2" style={{ color : props.mode==='dark'?'white':'black'}}>
         <h2>Your text summary</h2>
